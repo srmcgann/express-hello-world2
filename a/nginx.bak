@@ -1,0 +1,6 @@
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name code2.whitehot.ninja;
+    return 301 $scheme://code2.whitehot.ninja/index.php?i=$request_uri;
+}
